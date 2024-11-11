@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author USER
+ */
+public class BMICalculator {
+    
+    public static double calculateBMI(double weight, double height) {
+        return weight / (height * height);
+    }
+
+    public static String getBMICategory(double bmi) {
+        if (bmi < 18.5) {
+            return "Kekurangan berat badan";
+        } else if (bmi < 24.9) {
+            return "Berat badan normal";
+        } else if (bmi < 29.9) {
+            return "Kelebihan berat badan";
+        } else {
+            return "Kegemukan (Obesitas)";
+        }
+    }
+}
